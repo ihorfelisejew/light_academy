@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*-------base styles--------*/
 :root {
   --black: #222;
@@ -138,4 +139,69 @@ h6 {
   font-weight: 400;
 }
 
+/* Стилі для навігаційної панелі */
+.navbar {
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Вирівнює елементи по центру */
+  padding: 10px 20px;
+}
+
+/* Стилі для контейнера меню */
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стилі для посилань у меню */
+.menu li {
+  margin-right: 20px; /* Відстань між пунктами меню */
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для кнопки запису */
+.signup-button .btn {
+  background: linear-gradient(to right, green, blue);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block; /* Змінюємо з flex на inline-block */
+}
+
+.signup-button .btn:hover {
+  background: linear-gradient(to right, darkgreen, darkblue);
+}
+
 /*------pages-----------*/
+.full-width-image {
+  position: relative;
+  display: inline-block;
+}
+
+.background {
+  display: block;
+  width: 100%; /* Або фіксована ширина */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%; /* Відцентрування */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Щоб зображення було рівно в центрі */
+  width: 50%; /* Налаштуй розмір */
+}

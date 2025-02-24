@@ -1,8 +1,0 @@
-/*-------base styles--------*/
-@import "./base";
-@import "./reset";
-@import "./components/header";
-@import "./components/footer";
-
-/*------pages-----------*/
-@import "./pages/main-page";
