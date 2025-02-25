@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*-------base styles--------*/
 :root {
   --black: #222;
@@ -28,22 +29,26 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+
 @media (max-width: 1280px) {
   [class*=__container] {
     max-width: 1020px;
   }
 }
+
 @media (max-width: 1110px) {
   [class*=__container] {
     max-width: 960px;
   }
 }
+
 @media (max-width: 990px) {
   [class*=__container] {
     padding: 0 40px;
     max-width: 100%;
   }
 }
+
 @media (max-width: 570px) {
   [class*=__container] {
     padding: 0px 20px;
@@ -140,40 +145,44 @@ h6 {
 }
 
 /* Стилі для навігаційної панелі */
-.first-screen__container {
+.header__container {
   background-color: #ffffff;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Вирівнює елементи по центру */
+  align-items: center;
+  /* Вирівнює елементи по центру */
   padding: 10px 20px;
   gap: 20px;
 }
 
 /* Стилі для контейнера меню */
-.menu {
+.header__menu {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 30px; /* Відстань між пунктами меню */
+  gap: 30px;
+  max-width: 10px
+  /* Відстань між пунктами меню */
   align-items: center;
 }
 
 /* Стилі для посилань у меню */
-.menu li {
-  margin-right: 30px; /* Відстань між пунктами меню */
+.header__menu li {
+  margin-right: 30px;
+  /* Відстань між пунктами меню */
   display: flex;
 }
 
-.menu a {
+.header__menu a {
   color: black;
   text-decoration: none;
   padding: 10px 15px;
   display: flex;
 }
 
-.menu a:hover {
+.header__menu a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -184,7 +193,8 @@ h6 {
   padding: 20px 50px;
   text-decoration: none;
   border-radius: 15px;
-  display: flex; /* Змінюємо з flex на inline-block */
+  display: flex;
+  /* Змінюємо з flex на inline-block */
 }
 
 .btn:hover {
@@ -192,39 +202,56 @@ h6 {
 }
 
 .first-screen__prostir {
-  background-color: #ffffff;
-  overflow: hidden;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center; /* Вирівнює елементи по центру */
-  padding: 10px 200px;
-  flex-direction: column;
-  gap: 20px; /* Відстань між текстом і картинкою */
+  align-items: center;
   padding: 30px;
   display: flex;
-  justify-content: space-between; /* Розподіляє елементи зліва і справа */
-  align-items: center; /* Вирівнює елементи по вертикалі (за потребою) */
+  /* justify-content: space-between; */
+  /* Розподіляє елементи зліва і справа */
+  align-items: center;
+  /* Вирівнює елементи по вертикалі (за потребою) */
+  font-size: 40px; */
+  max-width: 1020px; */
+  margin-bottom: 100;
+  font-size: 48px;
 }
+.content-block {
+    display: flex;
+  }
 
 .text-prostir {
   margin-bottom: 48px;
   text-align: center;
-  font-size: 67px;
+  font-size: 40px;
   line-height: 1;
   font-weight: 900;
+  color: hsl(184, 88%, 38%);
 }
 
+.text-osvita {
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 900;
+    color: hsl(135, 83%, 43%);
+  }
+
 .full-width-image {
-  position: absolute; /*relative;*/
-  display: flex; /*inline-block;*/
+  position: absolute;
+  /*relative;*/
+  display: flex;
+  /*inline-block;*/
 }
+
 .full-width-image .dreen_lines {
   display: block;
   width: 100%;
 }
+
 .full-width-image .blue_lines {
   position: absolute;
-  top: 50%; /* Відцентрування */
+  top: 50%;
+  /* Відцентрування */
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -237,13 +264,17 @@ h6 {
 
 .background {
   display: block;
-  width: 100%; /* Або фіксована ширина */
+  width: 100%;
+  /* Або фіксована ширина */
 }
 
 .overlay {
   position: absolute;
-  top: 50%; /* Відцентрування */
+  top: 50%;
+  /* Відцентрування */
   left: 50%;
-  transform: translate(-50%, -50%); /* Щоб зображення було рівно в центрі */
-  width: 50%; /* Налаштуй розмір */
+  transform: translate(-50%, -50%);
+  /* Щоб зображення було рівно в центрі */
+  width: 50%;
+  /* Налаштуй розмір */
 }

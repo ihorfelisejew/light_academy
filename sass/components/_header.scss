@@ -1,5 +1,5 @@
 /* Стилі для навігаційної панелі */
-.first-screen__container {
+.header__container {
   background-color: #ffffff;
   overflow: hidden;
   display: flex;
@@ -50,109 +50,18 @@
   background: linear-gradient(to right, darkgreen, darkblue);
 }
 
-// /* Стилі для меню */
-// .menu {
-//   display: flex; /* Встановлює меню в один рядок */
-//   justify-content: center; /* Центрує меню */
-//   align-items: center;
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-//   gap: 30px; /* Відстань між пунктами меню */
-//   flex: 1;
-// }
-
-// /* Стилі для пунктів меню */
-// .menu li {
-//   display: inline-block;
-// }
-
-// /* Посилання у меню */
-// .menu a {
-//   color: black;
-//   text-decoration: none;
-//   padding: 10px 15px;
-//   display: block;
-// }
-
-// /* Наведення */
-// .menu a:hover {
-//   background-color: rgba(0, 0, 0, 0.1);
-// }
-
-// /* Кнопка запису */
-// .menu .btn {
-//   background: linear-gradient(to right, green, blue);
-//   color: white;
-//   padding: 12px 25px;
-//   text-decoration: none;
-//   border-radius: 15px;
-//   display: inline-block;
-//   font-weight: 600;
-//   transition: background 0.3s;
-// }
-
-// .menu .btn:hover {
-//   background: linear-gradient(to right, green, blue);
-// }
-
-// .first-screen__container {
-  // display: inline-block;
-  // gap: 30px;
-// }
-
-// /* Стилі для блоку "Твій простір" */
-//     .first-screen__prostir {
-//       background-color: #ffffff;  /* Колір фону */
-//       overflow: hidden;            /* Приховує все, що виходить за межі блоку */
-//       display: flex;               /* Використовуємо Flexbox для вирівнювання елементів */
-//       flex-direction: column;      /* Визначаємо, що елементи розташовуються вертикально */
-//       justify-content: center;     /* Вирівнює елементи по вертикалі по центру */
-//       align-items: center;         /* Вирівнює елементи по горизонталі по центру */
-//       gap: 20px;                   /* Відстань між елементами */
-//       padding: 30px;               /* Внутрішні відступи з усіх боків */
-//     }
-
-//     /* Стилі для тексту "Твій простір" */
-//     .text-prostir {
-//       margin-bottom: 16px;        /* Відступ знизу */
-//       text-align: center;         /* Вирівнює текст по центру */
-//       font-size: 67px;            /* Розмір шрифту */
-//       line-height: 1;             /* Висота рядка */
-//       font-weight: 900;           /* Жирний шрифт */
-//     }
-
-//     /* Стилі для тексту "онлайн освіти" */
-//     .text-online {
-//       margin-bottom: 16px;        /* Відступ знизу */
-//       text-align: center;         /* Вирівнює текст по центру */
-//       font-size: 67px;            /* Розмір шрифту */
-//       line-height: 1;             /* Висота рядка */
-//       font-weight: 900;           /* Жирний шрифт */
-//     }
-
-//     /* Стилі для картинки */
-//     .image-right {
-//       width: 100%;                /* Ширина картинки 100% від доступного простору */
-//       max-width: 400px;           /* Максимальна ширина для картинки */
-//       height: auto;               /* Висота картинки автоматично пропорційна ширині */
-//       display: block;             /* Робимо картинку блоковим елементом для зручності */
-//       margin-top: 20px;           /* Відступ зверху */
-
 .first-screen__prostir {
-  background-color: #ffffff;
-  overflow: hidden;
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center; /* Вирівнює елементи по центру */
-  padding: 10px 200px;
-  flex-direction: column;
-  gap: 20px; /* Відстань між текстом і картинкою */
+  align-items: center;
   padding: 30px;
   display: flex;
-  justify-content: space-between; /* Розподіляє елементи зліва і справа */
-  align-items: center; /* Вирівнює елементи по вертикалі (за потребою) */
-}
+  /* justify-content: space-between; */
+  /* Розподіляє елементи зліва і справа */
+  align-items: center;
+  /* Вирівнює елементи по вертикалі (за потребою) */
+  font-size: 40px; */
+  max-width: 1020px; */
+  margin-bottom: 100;
+  font-size: 48px;}
 
 // стилі для тексту
 .text-prostir {
