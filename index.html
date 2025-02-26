@@ -18,59 +18,50 @@
 <body>
   <div class="wrapper">
     <header>
-
       <div class="header__container">
-        <!-- Логотип -->
-        <img src="./images/menu__logo.png" alt="Логотип" />
-
-        <!-- Меню сайту -->
-        <ul class="header__menu">
-          <li>
-            <a href="#">Переваги</a>
-          </li>
-          <li>
-            <a href="#">Спікери</a>
-          </li>
-          <li>
-            <a href="#">Команда</a>
-          </li>
-
-        </ul>
-        <!-- Кнопка запису на курс -->
-        <a href="#" class="btn">Записатися на курс</a>
-
-      </div>
-
-      <!-- Блок твій простір -->
-      <div class="first-screen__prostir">
-        <div class="content-block">
-
-          <h1 class="hero-section__title">
-            <p>Твій <span class="text-prostir">простір</p>
-          </h1>
-          <h1 class="hero-section__title">
-            <p>онлайн -<span class="text-osvita">освіти</p>
-          </h1>
-          <p>Предмети, які викладають у нас:</p>
+        <div class="header__content">
+          <img class="header__logo" src="./images/menu__logo.png" alt="Логотип" />
+          <ul class="header__menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Переваги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Спікери</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Команда</a>
+            </li>
+          </ul>
+          <a href="#" class="header__button">Записатися на курс</a>
         </div>
-        <img src="./images/prostir__group.png" alt="Справа" class="image-right">
-
       </div>
     </header>
-
     <main>
-
-      <!-- Фонові лінії через весь екран -->
       <section class=”first-screen”>
         <div class=”first-screen__container”>
-
-
+          <div class="first-screen__content">
+            <h1 class="hero-section__title">
+              <p>Твій <span class="text-prostir">простір</p>
+            </h1>
+            <h1 class="hero-section__title">
+              <p>онлайн -<span class="text-osvita">освіти</p>
+            </h1>
+            <h1 class="hero-section__predmet">
+              <p>Предмети, які викладають у нас:</p>
+            </h1>
+            <h1 class="hero-section__predmet_btn">
+              <p>Конституційне право</p>
+            </h1>
+            <img src="./images/prostir__group.png" alt="Справа" class="image-right">
+          </div>
         </div>
+        <svg class=”first-screen__star” width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 1L18.3837 9.85302C18.6745 10.9333 18.82 11.4735 19.107 11.9151C19.361 12.3058 19.6942 12.6389 20.085 12.893C20.5265 13.18 21.0667 13.3255 22.147 13.6163L31 16L22.147 18.3837C21.0667 18.6745 20.5265 18.82 20.085 19.107C19.6942 19.361 19.361 19.6942 19.107 20.085C18.82 20.5265 18.6745 21.0667 18.3837 22.147L16 31L13.6163 22.147C13.3255 21.0667 13.18 20.5265 12.893 20.085C12.6389 19.6942 12.3058 19.361 11.9151 19.107C11.4735 18.82 10.9333 18.6745 9.85302 18.3837L1 16L9.85302 13.6163C10.9333 13.3255 11.4735 13.18 11.9151 12.893C12.3058 12.6389 12.6389 12.3058 12.893 11.9151C13.18 11.4735 13.3255 10.9333 13.6163 9.85302L16 1Z"
+            fill="#FFC400" stroke="#FFC400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
       </section>
-
-
     </main>
-
     <footer>
     </footer>
   </div>

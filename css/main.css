@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /*-------base styles--------*/
 :root {
   --black: #222;
@@ -29,26 +27,22 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-
 @media (max-width: 1280px) {
   [class*=__container] {
     max-width: 1020px;
   }
 }
-
 @media (max-width: 1110px) {
   [class*=__container] {
     max-width: 960px;
   }
 }
-
 @media (max-width: 990px) {
   [class*=__container] {
     padding: 0 40px;
     max-width: 100%;
   }
 }
-
 @media (max-width: 570px) {
   [class*=__container] {
     padding: 0px 20px;
@@ -144,137 +138,30 @@ h6 {
   font-weight: 400;
 }
 
-/* Стилі для навігаційної панелі */
-.header__container {
-  background-color: #ffffff;
-  overflow: hidden;
-  display: flex;
+header {
+  padding-top: 25px;
+}
+header .header__content {
   justify-content: space-between;
   align-items: center;
-  /* Вирівнює елементи по центру */
-  padding: 10px 20px;
-  gap: 20px;
-}
-
-/* Стилі для контейнера меню */
-.header__menu {
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+}
+header .header__content .header__logo {
+  width: 170px;
+  height: 70px;
+}
+header .header__content .header__menu {
+  display: flex;
   gap: 30px;
-  max-width: 10px
-  /* Відстань між пунктами меню */
-  align-items: center;
 }
-
-/* Стилі для посилань у меню */
-.header__menu li {
-  margin-right: 30px;
-  /* Відстань між пунктами меню */
-  display: flex;
+header .header__content .header__menu .menu__link {
+  color: var(--black);
 }
-
-.header__menu a {
-  color: black;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: flex;
-}
-
-.header__menu a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* Стилі для кнопки запису */
-.btn {
-  background: linear-gradient(to right, green, rgb(12, 12, 255));
-  color: white;
-  padding: 20px 50px;
-  text-decoration: none;
+header .header__content .header__button {
+  padding: 15px;
+  background: linear-gradient(to right, var(--green), var(--sky-blue));
   border-radius: 15px;
-  display: flex;
-  /* Змінюємо з flex на inline-block */
-}
-
-.btn:hover {
-  background: linear-gradient(to right, darkgreen, darkblue);
-}
-
-.first-screen__prostir {
-  align-items: center;
-  padding: 30px;
-  display: flex;
-  /* justify-content: space-between; */
-  /* Розподіляє елементи зліва і справа */
-  align-items: center;
-  /* Вирівнює елементи по вертикалі (за потребою) */
-  font-size: 40px; */
-  max-width: 1020px; */
-  margin-bottom: 100;
-  font-size: 48px;
-}
-.content-block {
-    display: flex;
-  }
-
-.text-prostir {
-  margin-bottom: 48px;
-  text-align: center;
-  font-size: 40px;
-  line-height: 1;
-  font-weight: 900;
-  color: hsl(184, 88%, 38%);
-}
-
-.text-osvita {
-    margin-bottom: 48px;
-    text-align: center;
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 900;
-    color: hsl(135, 83%, 43%);
-  }
-
-.full-width-image {
-  position: absolute;
-  /*relative;*/
-  display: flex;
-  /*inline-block;*/
-}
-
-.full-width-image .dreen_lines {
-  display: block;
-  width: 100%;
-}
-
-.full-width-image .blue_lines {
-  position: absolute;
-  top: 50%;
-  /* Відцентрування */
-  left: 50%;
-  transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 /*------pages-----------*/
-.full-width-image {
-  position: relative;
-  display: inline-block;
-}
-
-.background {
-  display: block;
-  width: 100%;
-  /* Або фіксована ширина */
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  /* Відцентрування */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Щоб зображення було рівно в центрі */
-  width: 50%;
-  /* Налаштуй розмір */
-}

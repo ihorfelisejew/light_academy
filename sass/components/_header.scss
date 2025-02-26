@@ -1,104 +1,28 @@
-/* Стилі для навігаційної панелі */
-.header__container {
-  background-color: #ffffff;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Вирівнює елементи по центру */
-  padding: 10px 20px;
-  gap: 20px;
-}
+header {
+  padding-top: 25px;
+  .header__content {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 
-/* Стилі для контейнера меню */
-.menu {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 30px; /* Відстань між пунктами меню */
-  align-items: center;
-}
+    .header__logo {
+      width: 170px;
+      height: 70px;
+    }
 
-/* Стилі для посилань у меню */
-.menu li {
-  margin-right: 30px; /* Відстань між пунктами меню */
-  display: flex;
-}
+    .header__menu {
+      display: flex;
+      gap: 30px;
+      .menu__link {
+        color: var(--black);
+      }
+    }
 
-.menu a {
-  color: black;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: flex;
-}
-
-.menu a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* Стилі для кнопки запису */
-.btn {
-  background: linear-gradient(to right, green, rgb(12, 12, 255));
-  color: white;
-  padding: 20px 50px;
-  text-decoration: none;
-  border-radius: 15px;
-  display: flex; /* Змінюємо з flex на inline-block */
-}
-
-.btn:hover {
-  background: linear-gradient(to right, darkgreen, darkblue);
-}
-
-.first-screen__prostir {
-  align-items: center;
-  padding: 30px;
-  display: flex;
-  /* justify-content: space-between; */
-  /* Розподіляє елементи зліва і справа */
-  align-items: center;
-  /* Вирівнює елементи по вертикалі (за потребою) */
-  font-size: 40px; */
-  max-width: 1020px; */
-  margin-bottom: 100;
-  font-size: 48px;}
-
-// стилі для тексту
-.text-prostir {
-  margin-bottom: 48px;
-  text-align: center;
-  font-size: 67px;
-  line-height: 1;
-  font-weight: 900;
-  // margin-bottom: 0;
-  // font-size: 48px;
-  // line-height: 1.5;
-}
-
-.text-online {
-  // margin-bottom: 48px;
-  // text-align: center;
-  // font-size: 67px;
-  // line-height: 1;
-  // font-weight: 900;
-  // margin-bottom: 0;
-  // font-size: 48px;
-  // line-height: 1.5;
-}
-
-.full-width-image {
-  position: absolute;/*relative;*/
-  display: flex;/*inline-block;*/
-
-  .dreen_lines {
-    display: block;
-    width: 100%;
-  }
-
-  .blue_lines {
-    position: absolute;
-    top: 50%; /* Відцентрування */
-    left: 50%;
-    transform: translate(-50%, -50%);
+    .header__button {
+      padding: 15px;
+      background: linear-gradient(to right, var(--green), var(--sky-blue));
+      border-radius: 15px;
+      color: #fff;
+    }
   }
 }
